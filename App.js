@@ -8,7 +8,7 @@ const [goals, setGoals] = useState('')
 function handleAddGoal(enterGoalText){
   setGoals(( ) => [ ...goals, {text: enterGoalText}])
   }
-
+//marianalol123
   function handleDeleteGoal(){
     console.log('DELETE')
   }
