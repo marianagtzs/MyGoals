@@ -5,7 +5,7 @@ function GoalInput({onAddGoal}) {
     const [enteredGoalText, setEnteredGoalText] = useState('')
 
 function handleInputGoal(enteredText) {
-    console.log(enteredText)
+   // console.log(enteredText)
     setEnteredGoalText(enteredText)
 }
 
@@ -20,6 +20,8 @@ return(
     <View style={styles.inputContainer}>
         <TextInput
         style={styles.TextInput}
+        placeholder="Your Goal"
+        onChangeText={handleInputGoal}
         value={enteredGoalText}
         />
     
@@ -32,7 +34,7 @@ return(
 )
 }
 
-export default MyGoals
+export default GoalInput
 
 const styles = StyleSheet.create({
     inputContainer: {
