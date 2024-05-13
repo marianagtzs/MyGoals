@@ -14,12 +14,13 @@ function handleAddGoal(enterGoalText){
   setGoals(( ) => [ ...goals, {text: enterGoalText, key: Math.random().toString()}])
   }
 
-  function handleDeleteGoal(){
+  function handleDeleteGoal(id){
     console.log('DELETE')
-    const handleDeleteGoal = goal.filter((goal) => {return goal.key !==id})
+    const deleteGoal = goals.filter((goal) => {return goal.key !== id})
+    setGoals(deleteGoal)
     }
 
-  return (
+  return (                                      
     <View style={styles.container}>
 
       <GoalInput

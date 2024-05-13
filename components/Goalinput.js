@@ -10,7 +10,7 @@ function handleInputGoal(enteredText) {
 }
 
 function addGoalHandler(){
-    onAddGoal(enteredText)
+    onAddGoal(enteredGoalText)
     setEnteredGoalText('')
 
     console.log('addGoalHandler')
